@@ -1,0 +1,32 @@
+trigger:
+- develop
+
+pool:
+  vmImage: ubuntu-latest
+
+steps:
+- task: NodeTool@0
+  inputs:
+    versionSpec: '18.13.0' 
+  displayName: 'Install Node.js'
+
+- script: |
+    rm -rf node_modules
+  displayName: 'Delete node_modules'
+
+- script: |
+    npm install
+  displayName: 'npm install'
+
+- script: |
+    npm run build
+  displayName: 'npm run build'
+
+- task: AzureWebApp@1
+  inputs:
+    azureSubscription: 'Subscription-dev'
+    appName: 'digitarastore' # Your Azure Web App name
+    package: $(System.DefaultWorkingDirectory)/build/
+    deploymentMethod: 'zipDeploy'
+    appType: 'webApp'
+  displayName: 'Deploy to Azure Web App'

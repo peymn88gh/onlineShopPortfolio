@@ -1,0 +1,87 @@
+{
+  "authMenu": [
+    {
+      "label": "home",
+      "path": "",
+      "icon": "faHome"
+    },
+    {
+      "label": "profile",
+      "path": "/profile",
+      "icon": "faUser"
+    },
+    {
+      "label": "dashboard",
+      "path": "/Dashboard",
+      "icon": "faTachometer"
+    },
+    {
+      "label": "orders",
+      "path": "/orders",
+      "icon": "faShoppingBasket"
+    },
+    {
+      "label": "products",
+      "path": "/products",
+      "icon": "faBoxes"
+    },
+    {
+      "label": "users",
+      "path": "/users",
+      "icon": "faUserFriends"
+    },
+    {
+      "label": "shipping",
+      "path": "/shipping",
+      "icon": "faTruck"
+    },
+    {
+      "label": "addresses",
+      "path": "/addresses",
+      "icon": "faMapMarkedAlt"
+    }
+  ],
+  "guestMenu": [
+    {
+      "label": "StartPage",
+      "path": "/",
+      "icon": "faHome"
+    },
+    {
+      "label": "Profile",
+      "path": "/profile",
+      "icon": "faUser"
+    },
+    {
+      "label": "Contact",
+      "path": "/Contact",
+      "icon": "faTachometer"
+    },
+    {
+      "label": "Table and Form"
+    },
+    {
+      "label": "Form",
+      "path": "/form",
+      "icon": "faWindows"
+    },
+    {
+      "label": "Table",
+      "path": "/table",
+      "icon": "faTable"
+    },
+    {
+      "label": "User and Auth"
+    },
+    {
+      "label": "Login",
+      "path": "/auth/login",
+      "icon": "faLock"
+    },
+    {
+      "label": "Register",
+      "path": "/auth/register",
+      "icon": "faNoteSticky"
+    }
+  ]
+}

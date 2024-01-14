@@ -1,0 +1,61 @@
+/* input.css */
+
+/* ... */
+
+/* Style for the toggle input container */
+.toggle-container {
+    position: relative;
+    display: inline-block;
+    width: 50px; /* Adjust the width as needed */
+    height: 24px; /* Adjust the height as needed */
+    cursor: pointer;
+  }
+  
+  /* Style for the toggle slider */
+  .toggle-slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc; /* Background color of the toggle when it's off */
+    border-radius: 34px; /* Rounded shape of the slider */
+    transition: 0.4s; /* Smooth transition for the slider */
+  }
+  
+  /* Style for the toggle checkbox */
+  .toggle-checkbox {
+    display: none; /* Hide the actual checkbox */
+  }
+  
+  /* Style for the toggle slider when it's on */
+  .toggle-checkbox:checked + .toggle-slider {
+    background-color: rgb(14, 116, 144); /* Background color of the toggle when it's on */
+  }
+  
+  /* Style for the toggle slider's circle knob */
+  .toggle-slider::before {
+    position: absolute;
+    content: "";
+    height: 18px; /* Height of the circle knob */
+    width: 18px; /* Width of the circle knob */
+    left: 3px; /* Offset from the left of the slider */
+    bottom: 3px; /* Offset from the bottom of the slider */
+    background-color: white; /* Color of the circle knob */
+    border-radius: 50%; /* Rounded shape of the circle knob */
+    transition: 0.4s; /* Smooth transition for the knob */
+  }
+  
+  /* Style for the circle knob when the toggle is on */
+  .toggle-checkbox:checked + .toggle-slider::before {
+    transform: translateX(26px); /* Move the knob to the right when the toggle is on */
+  }
+  .selectclss {
+    -webkit-appearance: none;
+    -moz-appearance: none
+  }
+  /* .dropdown-container select::-ms-expand { 
+    display: none; 
+  }  */
+  /* ... */
+  
